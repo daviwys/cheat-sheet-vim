@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VIM : Some keyboard shortcuts</title>
+</head>
+<body id="top">
+	<header>
+		<h1>VIM : SOME KEYBOARD SHORTCUTS</h1>
+	</header>
+	<!-- MENU OF NAVIGATE ++++++++++++++++++++++++++++++++++++++++++ -->
+	<nav>
+		Home
+		<a href="./contact.html" title="Send a message">Contact</a>
+		<a href="./license.html" title="See">License</a>
+	</nav>
+	<!-- MAIN CONTENT ++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<section>
+			<h2>BASICS COMMANDS</h2>
+			<table>
+				<tr>
+					<td>i</td><td>INSERT mode at the cursor position</td> 
+					<td>a</td><td>INSERT mode at the right of cursor</td> 
+					<td>A</td><td>INSERT mode at the end of the line</td> 
+					<td>:q</td><td>EXIT Vim</td> 
+					<td>:q!</td><td>EXIT Vim without save</td> 
+					<td>:w</td><td>SAVE the file current</td> 
+					<td>:w <file></td><td>SAVE the file current as <file></td> 
+					<dt>:wq</dt><dt>SAVE and EXIT</dt> 
+					<dt>:x</dt><dt>SAVE (only if changing) and EXIT</dt>
+					<dt>:!<command></dt><dt>Execute a Shell command</dt> 
+					<dt>:r !<command></dt><dt>Get the result of the command and insert it under the cursor position </dt>
+					<dt>:r <file></dt><dt>Get the content of <file> and insertit under the cursor position </dt>
+				</tr>
+			</table>
+
+			<h2>THE MODES</h2>
+			<table>
+				<tr>
+					<dt>v</dt><dt>VISUAL, selectionne le texte caractère par caractère </dt>
+					<dt>CTRL + v</dt><dt>V-BLOCK, select text on the width of the column </dt>
+					<dt>SHIFT + v</dt><dt>V-LINES, select text line by line </dt>
+					<dt>SHIFT + r</dt><dt>REPLACE, replace each letter with the one entered </dt>
+				</tr>
+			</table>
+
+			<h2>MOVE</h2> 
+			<table>
+				<tr>
+					<dt>h</dt><dt>Move the cursor one character to the left </dt>
+				</tr>
+				<tr>
+					<dt>j</dt><dt>Move the cursor at the bottom line </dt>
+				</tr>
+				<tr>
+					<dt>k</dt><dt>Move the cursor at the top line </dt>
+				</tr>
+				<tr>
+					<dt>l</dt><dt>Move the cursor one character to the right </dt>
+				</tr>
+				<tr>
+					<dt>gg</dt><dt>Move the cursor at the beginning of the first line of the document </dt>
+				</tr>
+				<tr>
+					<dt>G</dt><dt>Move the cursor at the beginning of the last line of the document </dt>
+				</tr>
+				<tr>
+					<dt>G<number line></dt><dt>Move the cursor to the line number </dt>
+				</tr>
+				<tr>
+					<dt>0</dt><dt>Move the cursor to the beginning of the line </dt>
+				</tr>
+				<tr>
+					<dt>$</dt><dt>Move the cursor to the end of the line </dt>
+				</tr>
+				<tr>
+					<dt>e</dt><dt>Move the cursor to the end of next word </dt>
+				</tr>
+				<tr>
+					<dt>nw</dt><dt>Move the cursor of n word(s) forward </dt>
+				</tr>
+				<tr>
+					<dt>ne</dt><dt>Move the cursor to end of nth word forward </dt>
+				</tr>
+			</table>
+
+			<h2>EDIT COMMANDS</h2>
+			<table>
+				<tr>
+					
+				</tr>
+			</table>
+			<dt>u</dt><dt>Cancel the last action </dt>
+			<dt>Ctrl + r</dt><dt>Restore canceled action </dt>
+			<dt>.</dt><dt>Repeats the last editing action </dt>
+			<dt>U</dt><dt>Cancel all changes on a line </dt>
+			<dt>yy</dt><dt>Copy a line (4yy = 4 lines) </dt>
+			<dt>dd</dt><dt>Cut a line (4dd = 4 lines)</dt> 
+			<dt>p</dt><dt>Insert after (P = insert before) the curso, to the next line </dt>
+			<dt>x</dt><dt>Erase character </dt>
+			<dt>ce</dt><dt>Erase from the cusor and until the end of the word, and go into INSERT mode </dt>
+			<dt>C</dt><dt>Clears to the end of line </dt>
+			<dt>dd</dt><dt>Erase the current line </dt>
+			<dt>de</dt><dt>Clears until the end of the current word </dt>
+			<dt>dw</dt><dt>Clears until the beginning of the next word </dt>
+			<dt>d$</dt><dt>Clears until the end of the line </dt>
+			<dt>diw</dt><dt>Clears the word under the cursor </dt>
+
+			<h2>COPY /PASTE</h2>
+			<p>y &nbsp;&rarr; Copy<br /> 
+			p &nbsp;&rarr; Paste</p> 
+
+			<h2>SEARCH / REPLACE</h2>
+			<dt>/</dt><dt>Search down the document </dt>
+			<dt>?</dt><dt>search up the document </dt>
+			<dt>%</dt><dt>Type % to find matching ), ], or }, after placing the cursor on one of the occurrences in question </dt>
+			<dt>n</dt><dt>Find the next occurrence</dt> 
+			<dt>N</dt><dt>Find the previous occurence </dt>
+			<dt>.</dt><dt>Repeat the last action </dt>
+			<dt>:s/OLD/NEW</dt><dt>Replace the next OLD by NEW, on the line </dt>
+			<dt>:s/OLD/NEW/g</dt><dt>Replace all (g) OLD with NEW, on the line </dt>
+			<dt>:%s/OLD/NEW/g</dt><dt>Replaces all occurrences of the entire file </dt>
+			<dt>:%s/OLD/NEW/gc</dt><dt>Find all occurrences in the entire file with a prompt to confirm or deny each substitution </dt>
+			<dt>:#,#s/OLD/NEW/g</dt><dt>Find where #, # are the line numbers of the range where the substitution is to be made </dt>
+
+			<p>**EXAMPLES**<br /> 
+			If you want to ignore case only for a search, use \c at the end of the search pattern :   /test\c  <Enter></p>  
+
+			<h2>SPLIT</h2>
+			<table>
+				<tr>
+					<dt>CTRL+w et s</dt><dt>Horizontal division </dt>
+					<dt>CTRL+w et v</dt><dt>Vertical division </dt>
+					<dt>CTRL+w et =</dt><dt>equalize the size of the viewport </dt>
+					<dt>CTRL+w et w</dt><dt>Switch viewport </dt>
+					<dt>CTRL+W et CTRL+<direction></dt><dt>Move to the viewport in the desired direction with H, J, K et L </dt>
+					<dt>CTRL+w et n</dt><dt>Open a blank file in a new window </dt>
+					<dt>CTRL+w et r</dt><dt>Change the viewports </dt>
+					<dt>CTRL+w et R</dt><dt>Change the viewports, reverse </dt>
+					<dt>CTRL+w et q</dt><dt>Close the split </dt>
+				</tr>
+			</table>
+
+			<h2>TABS</h2>
+			<table>
+				<tr>
+					<dt>:tabnew file</dt><dt>Open file in tab </dt>
+					<dt>:tabnext</dt><dt>Go to the next tab (gt) </dt>
+					<dt>:tabprevious</dt><dt>Go to the previous tab (gT) </dt>
+					<dt>:tabclose</dt><dt>Close tab </dt>
+				</tr>
+			</table>
+
+			<h2>ACTIVATE / DEACTIVATE OPTION</h2>
+			<p>Typing ":set xxx"  activates the option "xxx".<br />
+			Some options are :<br />
+			&rarr; 'ic'  'ingnorecase' to ignore the case during searches<br />
+			&rarr; 'is'  'incsearch'   to show partial matches<br />
+			&rarr;  'hls' 'hlsearch'    to highlight pairings</p>
+
+
+			<h2>OPEN/SAVE/EXIT/CHANGE FILE (buffer)</h2>
+			<table>
+				<tr>
+					<dt>:e <path/to/file></dt><dt>Open file </dt>
+					<dt>:w</dt><dt>Save</dt> 
+					<dt>:saveas <path/to/file></dt><dt>Save as … </dt>
+					<dt>:x, ZZ ou :wq</dt><dt>Save and exit (:x backup only if necessary) </dt>
+					<dt>:q!</dt><dt>Exit without save. Likewise :qa! exits even if other files (buffers) have unsaved changes </dt>
+					<dt>:bn</dt><dt>Show the following file </dt>
+					<dt>:bp</dt><dt>Show the file previous </dt>
+				</tr>
+			</table>
+
+			<h2>REPETITION IN POWER</h2>
+			<p>1) In COMMAND mode, enter the number of times for the repeat<br />
+			2) i<br />
+			3) Enter text<br />
+			4) Press Esc as many times as needed<br />
+			5) In COMMAND mode again, enter a new number of times to repeat<br />
+			6) To push on . as many times as necessary ;)</p>
+
+			<h5>Typing a number before a move repeats it as many times</h5>
+			<h5>Typing a number with an operator repeats it as many times</h5>
+			
+		</section>
+	<!-- FOOTER ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<footer>
+		<a href="./license.html" title="See">GNU GPL v3.0</a>
+		<a href="" title="See cheat sheet on Terminal">Terminal</a>
+		<a href="" title="See cheat sheet on Git">Git</a>
+		<a href="#top" title="Return to the top">Top</a>
+	</footer>
+</body>
+</html>
