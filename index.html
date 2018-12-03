@@ -23,16 +23,36 @@
 			<table>
 				<tr>
 					<td>i</td><td>INSERT mode at the cursor position</td> 
+				</tr>
+				<tr>
 					<td>a</td><td>INSERT mode at the right of cursor</td> 
 					<td>A</td><td>INSERT mode at the end of the line</td> 
+				</tr>
+				<tr>
 					<td>:q</td><td>EXIT Vim</td> 
+				</tr>
+				<tr>
 					<td>:q!</td><td>EXIT Vim without save</td> 
+				</tr>
+				<tr>
 					<td>:w</td><td>SAVE the file current</td> 
+				</tr>
+				<tr>
 					<td>:w <file></td><td>SAVE the file current as <file></td> 
+				</tr>
+				<tr>
 					<td>:wq</td><td>SAVE and EXIT</td> 
+				</tr>
+				<tr>
 					<td>:x</td><td>SAVE (only if changing) and EXIT</td>
+				</tr>
+				<tr>
 					<td>:!<command></td><td>Execute a Shell command</td> 
+				</tr>
+				<tr>
 					<td>:r !<command></td><td>Get the result of the command and insert it under the cursor position </td>
+				</tr>
+				<tr>
 					<td>:r <file></td><td>Get the content of <file> and insertit under the cursor position </td>
 				</tr>
 			</table>
@@ -41,8 +61,14 @@
 			<table>
 				<tr>
 					<td>v</td><td>VISUAL, select the text character by character</td>
+				</tr>
+				<tr>
 					<td>CTRL + v</td><td>V-BLOCK, select text on the witdh of the column </td>
+				</tr>
+				<tr>
 					<td>SHIFT + v</td><td>V-LINES, select text line by line </td>
+				</tr>
+				<tr>
 					<td>SHIFT + r</td><td>REPLACE, replace each letter with the one entered </td>
 				</tr>
 			</table>
@@ -91,19 +117,47 @@
 			<table>
 				<tr>
 					<td>u</td><td>Cancel the last action </td>
+				</tr>
+				<tr>
 					<td>Ctrl + r</td><td>Restore canceled action </td>
+				</tr>
+				<tr>
 					<td>.</td><td>Repeats the last editing action </td>
+				</tr>
+				<tr>
 					<td>U</td><td>Cancel all changes on a line </td>
+				</tr>
+				<tr>
 					<td>yy</td><td>Copy a line (4yy = 4 lines) </td>
+				</tr>
+				<tr>
 					<td>dd</td><td>Cut a line (4dd = 4 lines)</td> 
+				</tr>
+				<tr>
 					<td>p</td><td>Insert after (P = insert before) the curso, to the next line </td>
+				</tr>
+				<tr>
 					<td>x</td><td>Erase character </td>
+				</tr>
+				<tr>
 					<td>ce</td><td>Erase from the cusor and until the end of the word, and go into INSERT mode </td>
+				</tr>
+				<tr>
 					<td>C</td><td>Clears to the end of line </td>
+				</tr>
+				<tr>
 					<td>dd</td><td>Erase the current line </td>
+				</tr>
+				<tr>
 					<td>de</td><td>Clears until the end of the current word </td>
+				</tr>
+				<tr>
 					<td>dw</td><td>Clears until the beginning of the next word </td>
+				</tr>
+				<tr>
 					<td>d$</td><td>Clears until the end of the line </td>
+				</tr>
+				<tr>
 					<td>diw</td><td>Clears the word under the cursor </td>
 				</tr>
 			</table>
@@ -113,17 +167,41 @@
 			p &nbsp;&rarr; Paste</p> 
 
 			<h2>SEARCH / REPLACE</h2>
-			<td>/</td><td>Search down the document </td>
-			<td>?</td><td>search up the document </td>
-			<td>%</td><td>Type % to find matching ), ], or }, after placing the cursor on one of the occurrences in question </td>
-			<td>n</td><td>Find the next occurrence</td> 
-			<td>N</td><td>Find the previous occurence </td>
-			<td>.</td><td>Repeat the last action </td>
-			<td>:s/OLD/NEW</td><td>Replace the next OLD by NEW, on the line </td>
-			<td>:s/OLD/NEW/g</td><td>Replace all (g) OLD with NEW, on the line </td>
-			<td>:%s/OLD/NEW/g</td><td>Replaces all occurrences of the entire file </td>
-			<td>:%s/OLD/NEW/gc</td><td>Find all occurrences in the entire file with a prompt to confirm or deny each substitution </td>
-			<td>:#,#s/OLD/NEW/g</td><td>Find where #, # are the line numbers of the range where the substitution is to be made </td>
+			<table>
+				<tr>
+					<td>/</td><td>Search down the document </td>
+				</tr>
+				<tr>
+					<td>?</td><td>search up the document </td>
+				</tr>
+				<tr>
+					<td>%</td><td>Type % to find matching ), ], or }, after placing the cursor on one of the occurrences in question </td>
+				</tr>
+				<tr>
+					<td>n</td><td>Find the next occurrence</td> 
+				</tr>
+				<tr>
+					<td>N</td><td>Find the previous occurence </td>
+				</tr>
+				<tr>
+					<td>.</td><td>Repeat the last action </td>
+				</tr>
+				<tr>
+					<td>:s/OLD/NEW</td><td>Replace the next OLD by NEW, on the line </td>
+				</tr>
+				<tr>
+					<td>:s/OLD/NEW/g</td><td>Replace all (g) OLD with NEW, on the line </td>
+				</tr>
+				<tr>
+					<td>:%s/OLD/NEW/g</td><td>Replaces all occurrences of the entire file </td>
+				</tr>
+				<tr>
+					<td>:%s/OLD/NEW/gc</td><td>Find all occurrences in the entire file with a prompt to confirm or deny each substitution </td>
+				</tr>
+				<tr>
+					<td>:#,#s/OLD/NEW/g</td><td>Find where #, # are the line numbers of the range where the substitution is to be made </td>
+				</tr>
+			</table>
 
 			<p>**EXAMPLES**<br /> 
 			If you want to ignore case only for a search, use \c at the end of the search pattern :   /test\c  <Enter></p>  
@@ -132,13 +210,29 @@
 			<table>
 				<tr>
 					<td>CTRL+w et s</td><td>Horizontal division </td>
+				</tr>
+				<tr>
 					<td>CTRL+w et v</td><td>Vertical division </td>
+				</tr>
+				<tr>
 					<td>CTRL+w et =</td><td>equalize the size of the viewport </td>
+				</tr>
+				<tr>
 					<td>CTRL+w et w</td><td>Switch viewport </td>
+				</tr>
+				<tr>
 					<td>CTRL+W et CTRL+<direction></td><td>Move to the viewport in the desired direction with H, J, K et L </td>
+				</tr>
+				<tr>
 					<td>CTRL+w et n</td><td>Open a blank file in a new window </td>
+				</tr>
+				<tr>
 					<td>CTRL+w et r</td><td>Change the viewports </td>
+				</tr>
+				<tr>
 					<td>CTRL+w et R</td><td>Change the viewports, reverse </td>
+				</tr>
+				<tr>
 					<td>CTRL+w et q</td><td>Close the split </td>
 				</tr>
 			</table>
@@ -147,8 +241,14 @@
 			<table>
 				<tr>
 					<td>:tabnew file</td><td>Open file in tab </td>
+				</tr>
+				<tr>
 					<td>:tabnext</td><td>Go to the next tab (gt) </td>
+				</tr>
+				<tr>
 					<td>:tabprevious</td><td>Go to the previous tab (gT) </td>
+				</tr>
+				<tr>
 					<td>:tabclose</td><td>Close tab </td>
 				</tr>
 			</table>
@@ -165,11 +265,23 @@
 			<table>
 				<tr>
 					<td>:e <path/to/file></td><td>Open file </td>
+				</tr>
+				<tr>
 					<td>:w</td><td>Save</td> 
+				</tr>
+				<tr>
 					<td>:saveas <path/to/file></td><td>Save as … </td>
+				</tr>
+				<tr>
 					<td>:x, ZZ ou :wq</td><td>Save and exit (:x backup only if necessary) </td>
+				</tr>
+				<tr>
 					<td>:q!</td><td>Exit without save. Likewise :qa! exits even if other files (buffers) have unsaved changes </td>
+				</tr>
+				<tr>
 					<td>:bn</td><td>Show the following file </td>
+				</tr>
+				<tr>
 					<td>:bp</td><td>Show the file previous </td>
 				</tr>
 			</table>
